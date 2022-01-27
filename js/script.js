@@ -10,11 +10,14 @@ guessBtn.addEventListener('click', compare)
 
 // function
 function compare(e) {
-    i = i + 1;
+    // clicking on button without input can
+    // increse i value. Thats why you will get
+    // negative value in line 22
+    //i = i + 1;
     if (guessNumber.value === '') {
         alert('Input Field is Empty')
-    } else {
-
+    }else {
+        i = i + 1;
         let chance = document.querySelector('#chance');
         chance.innerText = 3-i;
 
