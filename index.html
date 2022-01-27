@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Number Guesser Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Number Guessing Game</h1>
+            <p>
+                We have selected a random number between 1 and 10. See if you can guess it in 3 turns or fewer. We'll
+                tell you if your guess was too high or too low.
+            </p><br>
+            <p>You Have <span id="chance">3</span> chance </p>
+            <br>
+            Enter a guess : <input type="text" id="guessNumber">
+            <button id="guessBtn">Submit Guess</button>
+            <br>
+            Previous guesses :
+            <span id="previousGuess">
+
+            </span>
+            <br> <br>
+            <div id="display">
+
+            </div>
+            
+            <span id="hints"></span>
+
+            <button style="display: none;" id="newGame">Start new game</button>
+
+
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
